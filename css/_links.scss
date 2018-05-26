@@ -1,0 +1,77 @@
+
+a{
+	transition: all 0.3s ease 0s;
+}
+
+
+
+
+a.app_wit_apple{
+	display: block;
+	background: url("../images/store_apple_wit.svg") no-repeat top left;
+	width: 140px;
+	height: 47px; 
+}
+
+a.app_wit_google{
+	display: block;
+	background: url("../images/store_google_wit.svg") no-repeat top left;
+	width: 140px;
+	height: 47px;
+}
+
+
+
+@media screen and (min-width: 300px) { 
+	a.app_black_apple{
+		display: block;
+		background: url("../images/store_apple_black.svg") no-repeat top left;
+		background-size: 100% 100%;
+		width: 140px;
+		height: 94px;  
+	}
+
+	a.app_black_google{
+		display: block;
+		background: url("../images/store_google_black.svg") no-repeat top left;
+		background-size: 100% 100%;
+		width: 140px;
+		height: 94px; 
+	}
+
+	.black_app_store{
+	    width: 290px; 
+	    height: 80px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	a.app_black_apple{
+		display: block;
+		background: url("../images/store_apple_black.svg") no-repeat top left;
+		background-size: 100% 100%;
+		width: 180px;
+		height: 60px;  
+	}
+
+	a.app_black_google{
+		display: block;
+		background: url("../images/store_google_black.svg") no-repeat top left;
+		background-size: 100% 100%;
+		width: 180px;
+		height: 60px; 
+	}
+
+	.black_app_store{
+	    width: 380px; 
+	    height: 80px;
+	}
+
+}
+
+
+
+
+
+

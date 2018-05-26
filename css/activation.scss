@@ -1,0 +1,182 @@
+
+
+$blue: #1997E5;;
+
+body{
+	background: $blue; height: 100vh;
+}
+
+body, a, p, li {
+    font: 16px/26px "museo-sans-rounded", Helvetica, Helvetica Neue, Arial;
+    letter-spacing: 1.1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 16px/26px "museo-sans-rounded", Helvetica, Helvetica Neue, Arial;
+    font-weight: 500;
+}
+
+a, button{
+	transition: all 0.3s ease 0s;
+}
+
+.wrapper{
+	width:100%;height:100%;
+	display:table;
+}
+.innerWrapper{
+	display:table-cell; vertical-align:middle;
+}
+
+.main-container{ 
+	background:rgba(25, 151, 229, 0.90);
+	padding: 20px 20px; 
+}
+
+.logo{
+	display: block;
+    width: 138px;
+    height: 65px;
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px auto;
+    background: url('../images/krew_logo_130_wit.svg') left top no-repeat;
+    background-size: 138px 65px;
+ 
+	span {
+	    font-weight: 300;
+	    font-size: 24px;
+	    line-height: 65px;
+	    display: block;
+	    float: left;
+	}
+	&:hover{
+		opacity: 0.5;
+	}
+}
+
+
+.thank_text{
+	display: block; 
+    color: #FFF;
+    padding-top: 30px;
+    text-align: center;
+
+    p{
+    	font-size: 20px;
+    	line-height: 1.5;
+    }
+
+    button{
+    	border: 2px #FFF solid;
+    	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		background: none;
+		padding: 14px 20px; 
+		margin-top: 35px;
+
+		&:hover{
+			color: $blue;
+			background: #FFF ;
+		}
+    }
+}
+
+
+a.app_black_apple{
+	display: block;
+	background: url("../images/store_apple_black.svg") no-repeat top left;
+	background-size: 100% 100%;
+	width: 140px;
+	height: 94px;  
+}
+
+a.app_black_google{
+	display: block;
+	background: url("../images/store_google_black.svg") no-repeat top left;
+	background-size: 100% 100%;
+	width: 140px;
+	height: 94px; 
+}
+
+.black_app_store{
+    width: 290px; 
+    height: 80px;
+}
+
+.app_store{ 
+    width: 300px;
+    height: 94px;
+    margin: 0px auto;
+}
+  
+a.app_wit_apple, a.app_wit_google, a.app_black_apple, a.app_black_google{
+    float: left;
+    margin-right: 10px;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+a.app_black_google{
+    margin-right: 0px;
+}
+
+
+
+
+@media screen and (min-width: 468px) {
+
+	//	body{
+		// background: #fff url("../images/bg_1.jpg") no-repeat right top; 
+		//    -webkit-background-size: cover;
+		//    -moz-background-size: cover;
+		//    -o-background-size: cover;
+		//    background-size: cover; 
+	//	}
+
+	.logo{
+		color: $blue; 
+    	height: 100px;
+    	background: url('../images/krew_logo_130.svg') left top no-repeat;background-size: 138px 65px;
+	}
+
+ 
+	.main-container{
+		max-width: 450px; 
+		min-height: 200px;  
+		padding: 60px 60px 60px 60px;
+		border: 4px #eaf0f0 solid;
+
+		// -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+		// -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+		// box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+
+		background: #fff url("../images/bg_1.jpg") no-repeat right top; 
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	} 
+
+	.thank_text{   
+		color: $blue;
+		p{
+			color: #000;
+			font-size: 18px;
+		}
+
+
+	    button{ 
+			padding: 4px 15px;  border: 2px $blue solid;
+	    	&:hover{
+				color: #FFF;
+				background: $blue ;
+			}
+	    }
+
+	}
+
+ 
+}
